@@ -20,6 +20,8 @@
 figure {transition: 0.5s;}
 figure:hover {filter: saturate(1.3); transform: scale(1.1);}
 
+.videos:hover {filter: brightness(0.5);}
+
 @media (max-width: 800px) {
     .logo { display: none; }
     .logo2 { display: block; }

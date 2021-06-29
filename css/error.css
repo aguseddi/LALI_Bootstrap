@@ -1,0 +1,55 @@
+* { margin: 0; padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+body { background-color:#dbcfb2; color:white; font-family: 'Source Sans Pro', sans-serif; font-size:28px; text-align: center; line-height: 70px; }
+
+#gif { width: 35%; position: absolute; top: 200px; left: 120px; border: 25px solid #aa895e;}
+#inicio {width: 10%; position: absolute; top: 75%; left: 22%;  font-size: small; line-height: 45px; background-color: #aa895e;}
+a {text-decoration: none; color:white;} 
+a:hover {color:rgb(31, 31, 31); }
+
+.logo {position: absolute;} 
+    #logoimg { height: 300px; padding: 10px; padding-left: 20px;} 
+.logo:hover {filter: brightness(0.2);}
+
+.contenedor {width: 42%; position: absolute; left: 51%; top: 120px;}
+
+@keyframes disco {
+  0% { transform: translateY(0%) rotate(0deg);}
+  10% { transform: translateY(0%) rotate(-10deg); transform-origin: center center; } 
+  50% { transform: translateY(280%) rotate(360deg); filter: opacity(1); transform-origin: center center;  }
+  51% { filter: opacity(0); }
+  80% { transform: translateY(280%) ; animation-play-state: paused; filter: opacity(0);}
+  100% { transform: translateY(280%); animation-play-state: paused; filter: opacity(0); }
+  
+}
+
+@keyframes discoroto { 
+  0% { filter: opacity(0); }
+  50% { filter: opacity(0); }
+  50.5% { filter: opacity(1); }
+  90% { filter: opacity(1); }
+  100% { filter: opacity(0);}
+
+}
+
+@keyframes sombra {
+  0% { filter: opacity(0);}
+  40% { filter: opacity(0) blur(15px); }
+  50% { filter: opacity(1) blur(8px);  }
+  90% { filter: opacity(1) blur(8px); }
+  100% { filter: opacity(0) blur(8px);}
+}
+
+.e404 {position: relative; width: 55%; left: 22%; }
+#disco  {position: absolute; width: 55%; left: 22%; top: -20px;
+    animation-name: disco; animation-duration: 11420ms; animation-iteration-count:infinite;  animation-timing-function: ease-in-out; }
+    #disco img {width: 100%;}
+#discoroto {position: absolute; width: 55%; left: 22%; top: 302%;
+    animation-name: discoroto; animation-duration: 11420ms; animation-iteration-count:infinite;}
+    #discoroto img {width: 100%;}
+.sombra { position: absolute; top: 390%; left: 22%; width:150px; height: 10px; border-radius: 50%; background: black; opacity: 0.5; 
+    animation-name: sombra; animation-duration: 11420ms; animation-iteration-count:infinite; }
+
+#x4 {width: 100%;}
+
